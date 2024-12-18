@@ -1,0 +1,557 @@
+body {
+    margin: 0;
+    font-family: "Inknut Antiqua";
+    background-color: #020A18;
+    color: #fff;
+    background-image: linear-gradient(to bottom, 
+        #020A18 0%,
+        #020A18 60%,
+        #012A32 80%, 
+        #004C4E 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background: url('Images/HeroMain.png') no-repeat center center/cover;
+    height: 1130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(2, 10, 24, 0.5);
+    z-index: 100;
+}
+
+.navbar .logo {
+    width: 124px;
+    height: 66.883px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 40px;
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+    font-size: 24px;
+    font-weight: 300;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-top: -200px;
+    font-style: normal;
+    font-family: "Inknut Antiqua";
+    font-weight:100;
+    line-height: 80px;
+    text-shadow: 
+        -1px -1px 0 #020A18, 
+        1px -1px 0 #020A18, 
+        -1px 1px 0 #020A18, 
+        1px 1px 0 #020A18;
+}
+
+/* Browse Section */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 95px;
+}
+
+.section-subtitle {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 95px;
+}
+
+.browse-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 129px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.card {
+    color: #000;
+    border-radius: 15px;
+    width: 310px;
+    height: 425px;
+    text-align: center;
+    overflow: hidden;
+    object-position: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    width: 220px;
+}
+
+.card img {
+    object-fit: cover;   
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+
+.more-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #FFD606;
+    font-family: "Inknut Antiqua";
+    border: 2px solid #FFD606;
+    background: rgba(255, 214, 6, 0.00);
+    width: 241px;
+    height: 62px;
+    margin: 15px 0 5px;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.more-btn:hover {
+    color: #49FFF6;
+    border: 2px solid #49FFF6;
+}
+
+.squigly-left {
+    width: 380px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.squigly-right {
+    width: 380px;
+    height: auto;
+    margin-right: 50px;
+}
+
+/* Quiz Section */
+#quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;      
+    min-height: 100vh;               
+}
+
+.quiz-card {
+    display: flex;
+    background: url('Images/QuizTitle.jpg') no-repeat center center/cover;
+    width: 1081px;
+    height: 686px;
+    border-radius: 25px;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin: 15px auto 100px;
+    margin-bottom: 100px;
+    
+}
+
+.take-quiz {
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.quiz-des {
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.start-btn {
+    margin-top: 0px;
+    width: 150px;
+    height: 40px;
+    font-family: "Inknut Antiqua";
+    font-size: 24px;
+    background: #ffcc00;
+    color: #000;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.start-btn:hover {
+    background-color: #49FFF6;
+}
+
+  
+ #question-container {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  #answers-container button {
+    display: block;
+    width: 525px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    font-family: "Inknut Antiqua";
+    font-size: 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  #answers-container button:hover {
+    background-color: #FFD606;
+    color: #020A18;
+  }
+
+  #answers-container button.selected {
+    background-color: #FFD606; 
+    color: rgb(0, 0, 0);
+  }
+
+  #next-button {
+    padding: 5px 20px;
+    background-color: #FFD606;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "Inknut Antiqua";
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  #next-button:hover {
+    background-color: #49FFF6;
+  }
+
+  #read-more-button, #restart-button {
+    padding: 5px 20px;
+    background-color: #FFD606;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-family: "Inknut Antiqua";
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+
+  #read-more-button {
+    margin-left: 20px;
+  }
+
+  #read-more-button:hover, #restart-button:hover {
+    background-color: #49FFF6;
+  }
+
+  #final-buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+/* Randomizer Section */
+.randombtn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.random-btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    width: 220px;
+    height: 60px;
+    font-family: "Inknut Antiqua";
+    font-size: 36px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px auto 5px;
+    border: none;
+}
+
+.random-btn:hover {
+    background-color: #49FFF6;
+}
+
+/* Footer */
+.footer {
+    background: #001617;
+    color: #004C4E;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.footer .logo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer ul li {
+    display: flex;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    font-size: 24px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #004C4E;
+}
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 150px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .hero {
+        height: 700px;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 26px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+
+    .navbar {
+        padding: 5px; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        width: 100px;
+        height: auto;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-left: 30px;
+    }
+    .section-subtitle {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .footer ul,
+    .footer ul li,
+    .footer ul li a {
+    display: none !important;
+    }
+
+    .footer {
+    padding: 1em 0;
+    background-color: #001617;
+    color: #004C4E;
+    text-align: center;
+    }
+
+    .browse-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 20px 10px;
+        justify-content: flex-start;
+    }
+
+    .browse-cards::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card {
+        flex: 0 0 175px;
+        height: 250px;
+        border-radius: 20px;
+        scroll-snap-align: start;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 20px;
+        bottom: 15px;
+    }
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        gap: 10px; 
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .squigly-left, .squigly-right {
+        width: 125px; 
+    }
+
+    .more-btn {
+        width: 90px;
+        height: 40px; 
+        font-size: 20px;
+        flex-shrink: 0;
+    }
+
+    .quiz-card {
+        width: 90%;
+        height: 325px; 
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .quiz-des {
+        font-size: 20px;
+    }
+
+    .start-btn {
+        width: 120px;
+        height: 35px; 
+        font-size: 18px; 
+    }
+
+    #question-container {
+        font-size: 20px;
+        width: 250px;
+        margin: 20px auto;
+        font-weight: bold;
+    }
+
+    #answers-container button {
+        width: 300px;
+        font-size: 18px; 
+        margin-bottom: 20px;
+    }
+
+    #next-button, #read-more-button, #restart-button {
+        width: 135px;
+        font-size: 18px;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    #quiz {
+        margin:0;
+        margin-top: -230px;
+    }
+
+    #random {
+        margin-top: -170px;
+    }
+
+    .randombtn-container {
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .random-btn {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

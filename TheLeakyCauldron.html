@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Treats - The Leaky Cauldron</title>
+    <link rel="stylesheet" href="stylesleaky.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="top">
+        <header class="hero">
+                <nav class="navbar">
+                    <a href="index.html" id="logo-link">
+                     <div class="logo">Hidden Treats</div>
+                    </a>
+                 <ul class="nav-links">
+                    <li><a href="#info">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                 </ul>
+                </nav>
+                <div class="main-text">
+                    <p class="hero-text">The Leaky Cauldron</p>
+                    <p class="description">Is a Harry Potter themed Cafe underground in Krakow's Old city.<br>
+                        It is a cozy magical place with a whole menu straight from the magical Harry Potter universe! Come in, enjoy some root beer, drink a smoking potion, and at the very end you can even buy a souvenir in the cutest wizard shop!</p>
+                </div>
+                <a href="index.html" class="back-button">Back</a>
+        </header>
+    </div>
+
+ <!-- Information Section -->
+    <div id="info">
+        <p class="section-title">Information</p>
+        <p class="section-subtitle">Plan your adventure</p>
+
+        <div class="info-container">
+            <div class="info-box">
+                <p class="info-title">Price Range</p>
+                <div class="info-content">
+                    <p>Food<br>15zł - 30zł</p>
+                    <br>
+                    <p>Drinks<br>12zł - 20zł</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p class="info-title">Opening Hours</p>
+                <div class="info-content">
+                    <p>Mon-Sun:<br>9am - 10pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-info-container">
+            <div class="horizontal-info-box" id="menu-card">
+                <p class="horizontal-info-title">Menu</p>
+                <button class="see-button">See More</button>
+            </div>
+    
+            <div class="horizontal-info-box" id="address-card">
+                <p class="horizontal-info-title">Grodzka 50/1</p>
+                <button class="see-button">See More</button>
+            </div>
+        </div>
+        <div id="map-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.2489248912776!2d19.93747277661072!3d50.06367867020919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0423ed97e5%3A0xa423fa4211b0c917!2sGrodzka%2050%2F1%2C%2031-044%20Krak%C3%B3w%2C%20Poland!5e0!3m2!1sen!2spl!4v1700000000000"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div id="menu-modal" class="menu-modal modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-menu-modal">&times;</span>
+                <div class="gallery">
+                    <img src="Images/leakymenu1.jpg" alt="Menu 1" class="gallery-image">
+                    <img src="Images/leakymenu2.jpg" alt="Menu 2" class="gallery-image">
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-modal" class="lightbox-modal">
+            <div class="lightbox-content">
+                <span class="close-btn" id="close-lightbox-modal">&times;</span>
+                <img id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Larger Image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Gallery -->
+    <p class="section-title">Gallery</p>
+    <p class="section-subtitle">See the magic right now</p>
+    <div id="gallery">
+        <div class="gallery-image-container">
+            <button class="gallery-btn" onclick="openGalleryPopup()">See More</button>
+        </div>
+    </div>
+    
+    <div id="gallery-popup" class="gallery-popup">
+        <div class="gallery-popup-content">
+            <span class="close-gallery-popup">&times;</span>
+            <div class="gallery-carousel">
+                <img src="Gallery/Leaky1.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Leaky2.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky3.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky4.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky5.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky6.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky7.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky8.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky9.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky10.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky11.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky12.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Leaky13.png" alt="Image 2" class="carousel-image">
+            </div>
+            <button class="prev-arrow">&#10094;</button>
+            <button class="next-arrow">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <div id="reviews">
+        <p class="section-title">Reviews</p>
+        <p class="section-subtitle">Plan your adventure</p>
+        <div class="reviews-container">
+
+            <div class="review-card">
+                <div class="reviewer-name">Ewa K</div>
+                <div class="review-text">
+                    "What a fun kid friendly place that offers some spooky drinks and awesome dessert, highly recommend a stop by!"
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-name">Kuba W</div>
+                <div class="review-text">
+                    "A great place for Harry Potter fans! The food/drinks aren't impressive, but the atmosphere is! A must visit, at least for the visuals."
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-name">Joanna G</div>
+                <div class="review-text">
+                    "Very nice caffe. Very good drinks and cakes. Magic place for every Harry Potter fan! Small Potter shop inside.
+                </div>
+            </div>
+
+            <div class="review-card">
+                <p class="reviewer-name">See More On</p>
+                <div class="review-buttons">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g274772-d9561429-Reviews-Dziorawy_Kociol-Krakow_Lesser_Poland_Province_Southern_Poland.html" target="_blank" class="review-button">
+                        <img src="Images/travellogo.jpg" alt="TripAdvisor Logo">
+                        Tripadvisor
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&sca_esv=3205b4b57189dd06&rlz=1C5CHFA_enDK1126DK1131&biw=1710&bih=912&tbm=lcl&q=dziorawy%20kociol%20reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MLewMDIyNjC2MDc3MLCwNDc02MDI-IpRPKUqM78osbxSITs_OTM_R6EotSwztbx4ESsuGQAFRk4vTgAAAA&rldimm=8788223038770089710&hl=en-PL&ved=0CAgQ5foLahcKEwiQutSAlq-KAxUAAAAAHQAAAAAQBg#lkt=LocalPoiReviews&arid=ChdDSUhNMG9nS0VJQ0FnSUN2M1l1VDdBRRAB" target="_blank" class="review-button">
+                        <img src="Images/googlelogo.jpg" alt="Google Reviews Logo">
+                        Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#info">Information</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li>
+                    <div class="logo">Hidden <br> Treats</div>
+                </li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="cafes.js"></script>
+
+</body>
+</html>

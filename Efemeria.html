@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Treats - Efemeria</title>
+    <link rel="stylesheet" href="stylesefemeria.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="top">
+        <header class="hero">
+                <nav class="navbar">
+                    <a href="index.html" id="logo-link">
+                     <div class="logo">Hidden Treats</div>
+                    </a>
+                 <ul class="nav-links">
+                    <li><a href="#info">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                 </ul>
+                </nav>
+                <div class="main-text">
+                    <p class="hero-text">Efemeria</p>
+                    <p class="description">Is an Alice in Wonderland inspired Cafe near the Krakow's Old City.<br>
+                        It is a dream like, open and relaxing place where you can enjoy some delicious cake and tea just like Alice did with the Mad Hatter! Enjoy the beautiful decorations, and 'interesting' sitting options in this cute wacky Cafe!</p>
+                </div>
+                <a href="index.html" class="back-button">Back</a>
+        </header>
+    </div>
+
+ <!-- Information Section -->
+    <div id="info">
+        <p class="section-title">Information</p>
+        <p class="section-subtitle">Plan your adventure</p>
+
+        <div class="info-container">
+            <div class="info-box">
+                <p class="info-title">Price Range</p>
+                <div class="info-content">
+                    <p>Food<br>10zł - 25zł</p>
+                    <br>
+                    <p>Drinks<br>10zł - 20zł</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p class="info-title">Opening Hours</p>
+                <div class="info-content">
+                    <p>Mon:<br>Closed</p>
+                    <br>
+                    <p>Tue-Thu:<br>10am - 8pm</p>
+                    <br>
+                    <p>Fri-Sun:<br>10am - 9pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-info-container">
+            <div class="horizontal-info-box" id="menu-card">
+                <p class="horizontal-info-title">Menu</p>
+                <button class="see-button">See More</button>
+            </div>
+    
+            <div class="horizontal-info-box" id="address-card">
+                <p class="horizontal-info-title">Karmelicka 7</p>
+                <button class="see-button">See More</button>
+            </div>
+        </div>
+        <div id="map-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.9220807885855!2d19.92984767660701!3d50.068718170152264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a0c5273fcf5%3A0x1fcbfa7c6fd81a7f!2sKarmelicka%207%2C%2031-133%20Krak%C3%B3w%2C%20Poland!5e0!3m2!1sen!2spl!4v1700000000000"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div id="menu-modal" class="menu-modal modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-menu-modal">&times;</span>
+                <div class="gallery">
+                    <img src="Images/efemeriamenu1.jpg" alt="Menu 1" class="gallery-image">
+                    <img src="Images/efemeriamenu2.jpg" alt="Menu 2" class="gallery-image">
+                    <img src="Images/efemeriamenu3.jpg" alt="Menu 3" class="gallery-image">
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-modal" class="lightbox-modal">
+            <div class="lightbox-content">
+                <span class="close-btn" id="close-lightbox-modal">&times;</span>
+                <img id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Larger Image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Gallery -->
+    <p class="section-title">Gallery</p>
+    <p class="section-subtitle">See the magic right now</p>
+    <div id="gallery">
+        <div class="gallery-image-container">
+            <button class="gallery-btn" onclick="openGalleryPopup()">See More</button>
+        </div>
+    </div>
+    
+    <div id="gallery-popup" class="gallery-popup">
+        <div class="gallery-popup-content">
+            <span class="close-gallery-popup">&times;</span>
+            <div class="gallery-carousel">
+                <img src="Gallery/Efemeria1.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria2.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria3.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria4.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria5.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria6.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria7.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Efemeria8.png" alt="Image 1" class="carousel-image">
+            </div>
+            <button class="prev-arrow">&#10094;</button>
+            <button class="next-arrow">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <div id="reviews">
+        <p class="section-title">Reviews</p>
+        <p class="section-subtitle">Plan your adventure</p>
+        <div class="reviews-container">
+
+            <div class="review-card">
+                <div class="reviewer-name">Katerina S</div>
+                <div class="review-text">
+                    "Really beautiful interior, wide range of delicious cakes and kind service. We really enjoy it. I really recommend to visit this place."
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-name">Jury B</div>
+                <div class="review-text">
+                    "Such an amazing place with the unique idea and original design! Best choice for having a rest and eat delicious meals! Approved!"
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="reviewer-name">Olga Z</div>
+                <div class="review-text">
+                    "Super cozy place with calm atmosphere. Wide choice of coffee, different drinks and tasty cakes. Totally recommend!"
+                </div>
+            </div>
+
+            <div class="review-card">
+                <p class="reviewer-name">See More On</p>
+                <div class="review-buttons">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g274772-d23648968-Reviews-Efemeria-Krakow_Lesser_Poland_Province_Southern_Poland.html" target="_blank" class="review-button">
+                        <img src="Images/travellogo.jpg" alt="TripAdvisor Logo">
+                        Tripadvisor
+                    </a>
+                    <a href="https://www.google.com/search?sa=X&sca_esv=8a859689bd224be1&rlz=1C5CHFA_enDK1126DK1131&biw=1710&bih=912&tbm=lcl&q=efemeria.%20kraina%20czar%C3%B3w%20reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NzIwMTQzMTEwNTQwMgdiQ4MNjIyvGBVS01JzU4syE_UUsosSM_MSFZKrEosOby5XKEoty0wtL17ESlAJACPFgZpgAAAA&rldimm=7204164405102710210&hl=en-PL&ved=0CAgQ5foLahcKEwj4pP3I5a-KAxUAAAAAHQAAAAAQBg#lkt=LocalPoiReviews&arid=ChZDSUhNMG9nS0VJQ0FnSURQM3JlQUdBEAE" target="_blank" class="review-button">
+                        <img src="Images/googlelogo.jpg" alt="Google Reviews Logo">
+                        Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#info">Information</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li>
+                    <div class="logo">Hidden <br> Treats</div>
+                </li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="cafes.js"></script>
+
+</body>
+</html>

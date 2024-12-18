@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Treats - The Wolf Pit</title>
+    <link rel="stylesheet" href="styleswolf.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="top">
+        <header class="hero">
+                <nav class="navbar">
+                    <a href="index.html" id="logo-link">
+                     <div class="logo">Hidden Treats</div>
+                    </a>
+                 <ul class="nav-links">
+                    <li><a href="#info">Information</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                 </ul>
+                </nav>
+                <div class="main-text">
+                    <p class="hero-text">The Wolf Pit</p>
+                    <p class="description"> Is a Witcher themed tavern underground in Krakow's Old City.<br>
+                        Going inside feels just like visiting one of the taverns as a Witcher looking for their next job.<br>
+                        Come in, eat the most delicious of meals, craft your own elixir. The tavern has their own currency, dressed up staff that play their role perfectly, and a true adventurer shop!</p>
+                </div>
+                <a href="index.html" class="back-button">Back</a>
+        </header>
+    </div>
+
+ <!-- Information Section -->
+    <div  id="info">
+        <p class="section-title">Information</p>
+        <p class="section-subtitle">Plan your adventure</p>
+
+        <div class="info-container">
+            <div class="info-box">
+                <p class="info-title">Price Range</p>
+                <div class="info-content">
+                    <p>Food<br>15zł - 50zł</p>
+                    <br>
+                    <p>Drinks<br>15zł - 30zł</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p class="info-title">Opening Hours</p>
+                <div class="info-content">
+                    <p>Mon-Thu:<br>2pm - 11pm</p>
+                    <br>
+                    <p>Fri-Sat:<br>2pm - 12am</p>
+                    <br>
+                    <p>Sun:<br>12pm - 10pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-info-container">
+            <div class="horizontal-info-box" id="menu-card">
+                <p class="horizontal-info-title">Menu</p>
+                <button class="see-button">See More</button>
+            </div>
+    
+            <div class="horizontal-info-box" id="address-card">
+                <p class="horizontal-info-title">Szpitalna 22</p>
+                <button class="see-button">See More</button>
+            </div>
+        </div>
+        <div id="map-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.2864167924275!2d19.942367376610755!3d50.06314317021413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b0459d6e485%3A0xa1aefb1cd2e4e3e7!2sSzpitalna%2022%2C%2031-024%20Krak%C3%B3w%2C%20Poland!5e0!3m2!1sen!2spl!4v1678048888888!5m2!1sen!2spl"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div id="menu-modal" class="menu-modal modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-menu-modal">&times;</span>
+                <div class="gallery">
+                    <img src="Images/wolfmenu1.png" alt="Menu 1" class="gallery-image">
+                    <img src="Images/wolfmenu2.png" alt="Menu 2" class="gallery-image">
+                    <img src="Images/wolfmenu3.png" alt="Menu 3" class="gallery-image">
+                </div>
+            </div>
+        </div>
+        <div id="lightbox-modal" class="lightbox-modal">
+            <div class="lightbox-content">
+                <span class="close-btn" id="close-lightbox-modal">&times;</span>
+                <img id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Larger Image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Gallery -->
+    <p class="section-title">Gallery</p>
+    <p class="section-subtitle">See the magic right now</p>
+    <div id="gallery">
+        <div class="gallery-image-container">
+            <button class="gallery-btn" onclick="openGalleryPopup()">See More</button>
+        </div>
+    </div>
+    
+    <div id="gallery-popup" class="gallery-popup">
+        <div class="gallery-popup-content">
+            <span class="close-gallery-popup">&times;</span>
+            <div class="gallery-carousel">
+                <img src="Gallery/Wolf1.png" alt="Image 1" class="carousel-image">
+                <img src="Gallery/Wolf2.png" alt="Image 2" class="carousel-image">
+                <img src="Gallery/Wolf3.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf4.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf5.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf6.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf7.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf8.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf9.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf10.png" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf11.jpg" alt="Image 3" class="carousel-image">
+                <img src="Gallery/Wolf12.png" alt="Image 3" class="carousel-image">
+            </div>
+            <button class="prev-arrow">&#10094;</button>
+            <button class="next-arrow">&#10095;</button>
+        </div>
+    </div>
+
+   <!-- Reviews -->
+   <div id="reviews">
+    <p class="section-title">Reviews</p>
+    <p class="section-subtitle">Plan your adventure</p>
+    <div class="reviews-container">
+        <div class="review-card">
+            <div class="reviewer-name">Gill P</div>
+            <div class="review-text">
+                "Such a great experience making your own cocktail at your table. Highly recommended its something so different"
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="reviewer-name">Cam M</div>
+            <div class="review-text">
+                "What an amazing place! The medieval theming is brilliant and all the little details are a great touch. The food tasted great too!"
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="reviewer-name">Veronica W</div>
+            <div class="review-text">
+                "Definitely felt like another world. The waitresses were dressed as elves, which really did build the excitement and the mood of the place."
+            </div>
+        </div>
+
+        <div class="review-card">
+            <p class="reviewer-name">See More On</p>
+            <div class="review-buttons">
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g274772-d25250872-Reviews-Tawerna_Wilczy_Dol-Krakow_Lesser_Poland_Province_Southern_Poland.html" target="_blank" class="review-button">
+                    <img src="Images/travellogo.jpg" alt="TripAdvisor Logo">
+                    Tripadvisor
+                </a>
+                <a href="https://www.google.com/search?q=tawerna+wilczy+d%C3%B3%C5%82+reviews&sca_esv=8a859689bd224be1&rlz=1C5CHFA_enDK1126DK1131&biw=1710&bih=912&hl=en-PL&tbm=lcl&ei=ipdhZ8L_G5-awPAPzYHPqA4&oq=wilczy.d+reviews&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhB3aWxjenkuZCByZXZpZXdzKgIIADIIEAAYBRgHGB4yCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEiRMVCCA1iaI3ABeACQAQGYAfwBoAH1E6oBBzEwLjExLjG4AQHIAQD4AQGYAgygAoAJwgIIEAAYBRgNGB7CAggQABgIGA0YHsICBhAAGAcYHpgDAIgGAZIHAzYuNqAHxFk&sclient=gws-wiz-local#lkt=LocalPoiReviews&rlfi=hd:;si:7321374514071618646,l,Chx0YXdlcm5hIHdpbGN6eSBkw7PFgiByZXZpZXdzIgI4AZIBCnJlc3RhdXJhbnQ;mv:[[50.063092277319036,19.94151016204787],[50.06273232268097,19.94094943795212]]" target="_blank" class="review-button">
+                    <img src="Images/googlelogo.jpg" alt="Google Reviews Logo">
+                    Google
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#info">Information</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li>
+                    <div class="logo">Hidden <br> Treats</div>
+                </li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="cafes.js"></script>
+
+</body>
+</html>

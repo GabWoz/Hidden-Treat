@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Treats</title>
+    <link rel="stylesheet" href="stylesmain.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="top">
+        <header class="hero">
+            <nav class="navbar">
+                <div class="logo">Hidden Treats</div>
+                <ul class="nav-links">
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#random">Random</a></li>
+                </ul>
+            </nav>
+                <div class="hero-text">
+                    <h1>
+                    Looking for a themed dining experience? <br>
+                    We'll help you find one! <br>
+                    Browse, Take a Quiz or leave it up to Fate!
+                    </h1>
+                </div>
+        </header>
+    </section>
+
+    <!-- Browse Section -->
+    <div id="browse">
+        <p class="section-title">Browse</p>
+        <p class="section-subtitle">Explore and find your place!</p>
+        <div class="browse-cards">
+            <a href="TheLeakyCauldron.html" class="card">
+                <div class="card-image-container">
+                    <img src="Images/HarryPotterCard.jpg" alt="The Leaky Cauldron">
+                    <div class="card-title">The Leaky Cauldron</div>
+                </div>
+            </a>
+    
+            <a href="Efemeria.html" class="card">
+                <div class="card-image-container">
+                    <img src="Images/EfemeriaCard.jpg" alt="Efemeria">
+                    <div class="card-title">Efemeria</div>
+                </div>
+            </a>
+    
+            <a href="TheWolfPit.html" class="card">
+                <div class="card-image-container">
+                    <img src="Images/WolfPitCard.jpg" alt="The Wolf Pit">
+                    <div class="card-title">The Wolf Pit</div>
+                </div>
+            </a>
+        </div>
+        <div class="button-container">
+            <img src="Images/SquiglyLeft.png" alt="Left Squiggle" class="squigly-left">
+            <a href="404.html" class="more-btn">More</a>
+            <img src="Images/SquiglyRight.png" alt="Right Squiggle" class="squigly-right">
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz">
+        <p class="section-title">Still Unsure?</p>
+        <p class="section-subtitle">We're happy to help!</p>
+        <div class="quiz-card">
+            <p class="take-quiz" id="quiz-title">Take a Quiz</p>
+            <p class="quiz-des" id="quiz-description">Answer a few questions <br> and we will find the perfect <br> place for you!</p>
+            <button class="start-btn" id="start-button">Start</button>
+            <div id="question-container"></div>
+            <div id="answers-container"></div>
+            <button id="next-button" style="display:none;">Next</button>
+            <div id="final-buttons" style="display:none;">
+                <button id="restart-button">Restart Quiz</button>
+                <button id="read-more-button">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Randomizer Section -->
+    <div id="random">
+        <p class="section-title">Feeling Adventurous?</p>
+        <p class="section-subtitle">Let the Fates guide you</p>
+        <div class="randombtn-container">
+            <img src="Images/SquiglyLeft.png" alt="Left Squiggle" class="squigly-left">
+            <button class="random-btn">Random</button>
+            <img src="Images/SquiglyRight.png" alt="Right Squiggle" class="squigly-right">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="#browse">Browse</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li>
+                    <div class="logo">Hidden <br> Treats</div>
+                </li>
+                <li><a href="#random">Random</a></li>
+                <li><a href="#top">Top</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="quiz.js"></script>
+    <script src="randomBtn.js"></script>
+
+</body>
+</html>

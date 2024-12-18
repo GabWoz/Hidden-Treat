@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 10, 24);
+    font-family: "Inknut Antiqua";
+    color: white;
+    overflow: hidden;
+}
+
+.error-container {
+    text-align: center;
+    background: url('Images/Fairies.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.error-title {
+    font-size: 350px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Inknut Antiqua";
+    margin-bottom: -50px;
+}
+
+.error-subtitle {
+    font-size: 80px;
+    margin: 10px 0;
+    font-family: "Inknut Antiqua";
+}
+
+.error-message {
+    font-size: 50px;
+    margin: 10px 0;
+    font-style: italic;
+    font-family: "Inknut Antiqua";
+}
+
+.error-title, .error-subtitle, .error-message {
+    text-shadow: 
+        -2px -2px 0 #020A18, 
+        2px -2px 0 #020A18, 
+        -2px 2px 0 #020A18, 
+        2px 2px 0 #020A18;
+}
+
+
+@media (max-width: 768px) {
+    .error-title {
+        font-size: 200px;
+    }
+
+    .error-subtitle {
+        font-size: 50px;
+    }
+
+    .error-message {
+        font-size: 30px;
+    }
+
+    .error-container {
+        transform: translateY(-5%);
+    }
+}
+
+@media (max-width: 480px) {
+    .error-title {
+        font-size: 150px;
+    }
+
+    .error-subtitle {
+        font-size: 40px;
+    }
+
+    .error-message {
+        font-size: 25px;
+    }
+
+    .error-container {
+        transform: translateY(-2%);
+    }
+}
